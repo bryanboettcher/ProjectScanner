@@ -1,15 +1,18 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.IO;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Reflection;
+using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace ProjectScanner
 {
     class Program
     {
+        [STAThread]
         static void Main(string[] args)
         {
+            Application.Run(new MainDialog());
         }
     }
 }
